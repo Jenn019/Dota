@@ -1,5 +1,7 @@
 # Dota
 Análisis de Sistemas II
+Jeniffer Fuentes Araya
+Diego Ramirez Madriz
 
 Se pretende realizar un sistema para la empresa Artesania Ramirez que permita llevar el control administrativo de los recursos que se utilizan a diario para las diferentes actividades que desarrollan tanto en el área de comercialización como en la producción. Así mismo de que el sistema posea todo lo relacionado al control de las ventas realizadas, así como las compras de materiales que se realicen en el área de taller. 
 
