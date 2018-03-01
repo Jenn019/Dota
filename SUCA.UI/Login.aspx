@@ -48,7 +48,7 @@
 
                                  <asp:Button id="btnLogin"
                                                Text="Login"
-                                                 OnClick="BuscarUsuario()" 
+                                                 OnClick="btnLogin_Click"
                                                         runat="server"/>                   
                             </div>
                         </div>
