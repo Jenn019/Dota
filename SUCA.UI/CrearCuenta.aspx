@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CrearCuenta.aspx.cs" Inherits="SUCA.UI.CrearCuenta" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainMenu" runat="server">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +17,7 @@
     </div>
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent2" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <br />
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -41,7 +41,7 @@
         <asp:Label ID="lblRol" runat="server" Text="Rol:"></asp:Label>
         <asp:ListBox ID="txtRol" runat="server" Rows="1" class="form-control">
             <asp:ListItem>Administrador</asp:ListItem>
-            <asp:ListItem>Proveedor</asp:ListItem>
+            <asp:ListItem>Cliente</asp:ListItem>
             
         </asp:ListBox>
         <div class="form-horizontal">
