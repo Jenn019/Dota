@@ -9,7 +9,7 @@ namespace SUCA.UI
 {
     public class Encriptacion
     {
-        public static string Llave = "efjfowpcvkeowpslfefplxc";
+        public static string Llave = "jskruwiqhendmsud";
 
 
         public static string Decriptar(string contra)

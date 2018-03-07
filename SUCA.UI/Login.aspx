@@ -46,10 +46,7 @@
                         <div style="margin-top:10px" class="form-group">
                             <div class="col-sm-12">
 
-                                 <asp:Button id="btnLogin"
-                                               Text="Login"
-                                                 OnClick="btnLogin_Click"
-                                                        runat="server"/>                   
+                                 <asp:Button id="btnLogin" Text="Login" OnClick="btnLogin_Click" runat="server"/>                   
                             </div>
                         </div>
                         
