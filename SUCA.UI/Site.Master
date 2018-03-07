@@ -61,25 +61,7 @@
                                 <li><a runat="server" href="listarclientes.aspx">Lista Clientes</a></li>
                                 <li><a runat="server" href="MantenCliente.aspx">Mantenimiento Clientes </a></li>                      
                                 </ul>  
-                            </li>  
-                            
-                            <li class="dropdown">
-                                <a runat="server" class="dropdown-toggle" data-toggle="dropdown" href="InsertarTerrenos.aspx">Terrenos</a> 
-                                <ul class="dropdown-menu">
-                                <li><a runat="server" href="InsertarTerrenos.aspx">Insertar terrenos</a></li>
-                                <li><a runat="server" href="ListarTerrenos.aspx">Lista terrenos</a></li>
-                                <li><a runat="server" href="MantTerreno.aspx">Mantenimiento terrenos</a></li>                      
-                                </ul>  
-                            </li>  
-                            
-                             <li class="dropdown">
-                                <a runat="server" class="dropdown-toggle" data-toggle="dropdown" href="Insertar.aspx">Cosechas</a> 
-                                <ul class="dropdown-menu">
-                                <li><a runat="server" href="Insertar.aspx">Insertar Cosechas</a></li>
-                                <li><a runat="server" href="ListarCosechas.aspx">Lista Cosechas</a></li>
-                                <li><a runat="server" href="MantCosechas.aspx">Mantenimiento Consechas</a></li>                      
-                                </ul>  
-                            </li>                                                                   
+                            </li>                                                                    
                            <li><a runat="server" href="Carrito.aspx">Compras</a></li>
                            <li><a runat="server" href="Login.aspx">Salir</a></li>
                         </ul>
