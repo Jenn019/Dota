@@ -28,10 +28,10 @@ namespace SUCA.UI
                 {
                     Session["Rol"] = usuario.Rol;
                     if (usuario.Rol == "Cliente")
-                        Response.Redirect("Compras.aspx");
+                        Response.Redirect("MantenCliente.aspx");
 
                     if (usuario.Rol == "Administrador")
-                        Response.Redirect("Index.aspx");
+                        Response.Redirect("MantenCliente.aspx");
                 }
                 else
                 {
