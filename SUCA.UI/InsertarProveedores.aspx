@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InsertarClientes.aspx.cs" Inherits="SUCA.UI.InsertarClientes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InsertarProveedores.aspx.cs" Inherits="SUCA.UI.InsertarProveedores" %>
+
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    
- <div class="container">
 
-    <h2>Insertar cliente</h2>
+    <div class="container">
+
+    <h2>Insertar Proveedores</h2>
     <div class="alert alert-success" visible="false" id="mensaje" runat="server">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <strong id="textoMensaje" runat="server"></strong>
@@ -14,8 +15,8 @@
         <strong id="textoMensajeError" runat="server"></strong>
     </div>
      <div class="form-group">
-        <asp:Label ID="lbCedula" foreColor="black" runat="server" Text="Cedula:"></asp:Label>
-        <asp:TextBox ID="txtCedula" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
+        <asp:Label ID="lbEmpresa" foreColor="black" runat="server" Text="Empresa:"></asp:Label>
+        <asp:TextBox ID="txtEmpresa" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />
    
@@ -43,4 +44,5 @@
         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn btn-primary" OnClick="btnCancelar_Click" />
         
     </div>
+     </div>
 </asp:Content>
