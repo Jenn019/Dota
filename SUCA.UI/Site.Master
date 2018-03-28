@@ -71,7 +71,17 @@
                                 <li><a runat="server" href="listarclientes.aspx">Listar Clientes</a></li>
                                 <li><a runat="server" href="MantenCliente.aspx">Mantenimiento Clientes </a></li>                      
                                 </ul>  
-                            </li>                                                                    
+                            </li>     
+                            
+                             <li class="dropdown">
+                                <a runat="server" class="dropdown-toggle" data-toggle="dropdown" href="InsertarProductos.aspx">Productos</a> 
+                                <ul class="dropdown-menu">
+                                <li><a runat="server" href="InsertarProductos.aspx">Insertar Producto</a></li>
+                                <li><a runat="server" href="listarproductos.aspx">Listar Producto</a></li>
+                                <li><a runat="server" href="MantenProductos.aspx">Mantenimiento Producto </a></li>                      
+                                </ul>  
+                            </li>  
+
                            <li><a runat="server" href="Carrito.aspx">Compras</a></li>
                            <li><a runat="server" href="Login.aspx">Salir</a></li>
                         </ul>

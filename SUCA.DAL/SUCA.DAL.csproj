@@ -69,9 +69,11 @@
       <DependentUpon>BD.settings</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\IProducto.cs" />
     <Compile Include="Interfaces\IProveedor.cs" />
     <Compile Include="Interfaces\IUsuario.cs" />
     <Compile Include="Metodos\MCliente.cs" />
+    <Compile Include="Metodos\MProducto.cs" />
     <Compile Include="Metodos\MProveedor.cs" />
     <Compile Include="Metodos\MUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

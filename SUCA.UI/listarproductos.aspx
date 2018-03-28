@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="listarclientes.aspx.cs" Inherits="SUCA.UI.listarclientes" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="listarproductos.aspx.cs" Inherits="SUCA.UI.listarproductos" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
@@ -12,7 +12,7 @@
     </div>
     <br />
         <div class="panel panel-info">
-              <asp:GridView ID="dgvCliente" runat="server" CssClass="table table-hover"></asp:GridView>
+              <asp:GridView ID="dgvProducto" runat="server" CssClass="table table-hover"></asp:GridView>
         </div>
     <br />
 
