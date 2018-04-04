@@ -234,12 +234,15 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="InsertarClientes.aspx" />
+    <Content Include="InsertarMateria.aspx" />
     <Content Include="InsertarProductos.aspx" />
     <Content Include="InsertarProveedores.aspx" />
+    <Content Include="ListarMateria.aspx" />
     <Content Include="listarproductos.aspx" />
     <Content Include="listarproveedores.aspx" />
     <Content Include="listarclientes.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MantenMateria.aspx" />
     <Content Include="MantenProductos.aspx" />
     <Content Include="MantenProveedor.aspx" />
     <Content Include="MantenCliente.aspx" />
@@ -441,6 +444,13 @@
     <Compile Include="InsertarClientes.aspx.designer.cs">
       <DependentUpon>InsertarClientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InsertarMateria.aspx.cs">
+      <DependentUpon>InsertarMateria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarMateria.aspx.designer.cs">
+      <DependentUpon>InsertarMateria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InsertarProductos.aspx.cs">
       <DependentUpon>InsertarProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -454,6 +464,13 @@
     </Compile>
     <Compile Include="InsertarProveedores.aspx.designer.cs">
       <DependentUpon>InsertarProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarMateria.aspx.cs">
+      <DependentUpon>ListarMateria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarMateria.aspx.designer.cs">
+      <DependentUpon>ListarMateria.aspx</DependentUpon>
     </Compile>
     <Compile Include="listarproductos.aspx.cs">
       <DependentUpon>listarproductos.aspx</DependentUpon>
@@ -482,6 +499,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenMateria.aspx.cs">
+      <DependentUpon>MantenMateria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MantenMateria.aspx.designer.cs">
+      <DependentUpon>MantenMateria.aspx</DependentUpon>
     </Compile>
     <Compile Include="MantenProductos.aspx.cs">
       <DependentUpon>MantenProductos.aspx</DependentUpon>

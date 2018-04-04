@@ -82,6 +82,15 @@
                                 </ul>  
                             </li>  
 
+                            <li class="dropdown">
+                                <a runat="server" class="dropdown-toggle" data-toggle="dropdown" href="InsertarMateria.aspx">Materia Prima</a> 
+                                <ul class="dropdown-menu">
+                                <li><a runat="server" href="InsertarMateria.aspx">Insertar Materia</a></li>
+                                <li><a runat="server" href="ListarMateria.aspx">Listar Materia</a></li>
+                                <li><a runat="server" href="MantenMateria.aspx">Mantenimiento Materia</a></li>                      
+                                </ul>  
+                            </li>  
+
                            <li><a runat="server" href="Carrito.aspx">Compras</a></li>
                            <li><a runat="server" href="Login.aspx">Salir</a></li>
                         </ul>
