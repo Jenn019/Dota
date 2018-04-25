@@ -11,7 +11,7 @@
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
             <strong id="textoMensajeError" runat="server"></strong>
         </div>
-        <asp:Label ID="lblCodigo1" runat="server" Text="Codigo: "></asp:Label>
+        <asp:Label ID="lblCodigo1" runat="server" Text="ID Codigo: "></asp:Label>
         <asp:TextBox ID="txtCodigo1" runat="server" CssClass="form-control"></asp:TextBox>
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
     </div>

@@ -12,7 +12,7 @@
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
             <strong id="textoMensajeError" runat="server"></strong>
         </div>
-        <asp:Label ID="lbEmpresa1" runat="server" Text="ID Empresa: "></asp:Label>
+        <asp:Label ID="lbEmpresa1" runat="server" Text="ID Proveedor: "></asp:Label>
         <asp:TextBox ID="txtEmpresa1" runat="server" CssClass="form-control"></asp:TextBox>
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
     </div>
@@ -20,7 +20,8 @@
     <br />
 
     <div class="form-group" id="divMantenimiento" runat="server" visible="false">
-        <asp:Label ID="lbEmpresa" runat="server" Text="ID"></asp:Label>
+
+        <asp:Label ID="lbEmpresa" runat="server" Text="Empresa"></asp:Label>
         <asp:TextBox ID="txtEmpresa" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />

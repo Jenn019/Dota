@@ -91,7 +91,15 @@
                                 </ul>  
                             </li>  
 
-                           <li><a runat="server" href="Carrito.aspx">Compras</a></li>
+                            <li class="dropdown">
+                                <a runat="server" class="dropdown-toggle" data-toggle="dropdown" href="InsertarMateria.aspx">Factura</a> 
+                                <ul class="dropdown-menu">
+                                <li><a runat="server" href="InsertarFactura.aspx">Insertar Factura</a></li>
+                                <li><a runat="server" href="ListarFactura.aspx">Listar Factura</a></li>
+                                <li><a runat="server" href="MantenFactura.aspx">Mantenimiento Factura</a></li>                      
+                                </ul>  
+                            </li>  
+
                            <li><a runat="server" href="Login.aspx">Salir</a></li>
                         </ul>
                     </div>

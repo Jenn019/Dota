@@ -26,6 +26,7 @@ namespace SUCA.UI
             {
                 Cliente cliente = new Cliente
                 {
+                    IdCliente = Convert.ToInt32(txtCedula1.Text),
                     Cedula = Convert.ToInt32(txtCedula.Text),
                     Nombre = txtNombre.Text,
                     Apellido = txtApellidos.Text,
@@ -75,6 +76,7 @@ namespace SUCA.UI
                 var cliente = clie.BuscarCliente(Convert.ToInt32(txtCedula1.Text));
                 if (cliente != null)
                 {
+                    txtCedula1.Text = cliente.IdCliente.ToString();
                     txtCedula.Text = cliente.Cedula.ToString();
                     txtNombre.Text = cliente.Nombre;
                     txtApellidos.Text = cliente.Apellido.ToString();

@@ -11,43 +11,43 @@ using ServiceStack.OrmLite;
 
 namespace SUCA.DAL.Metodos
 {
-    public class MCliente : ICliente
+    public class MFactura : IFactura
     {
 
         private OrmLiteConnectionFactory _conexion;
         private IDbConnection _db;
 
-        public MCliente()
+        public MFactura()
         {
             _conexion = new OrmLiteConnectionFactory(BD.Default.conexion,
                 SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
 
-        public List<Cliente> ListarClientes()
+        public List<Factura> ListarFactura()
         {
-            return _db.Select<Cliente>();
+            return _db.Select<Factura>();
         }
 
-        public Cliente BuscarCliente(int IdCliente)
+        public Factura BuscarFactura(int Codigo)
         {
 
-            return _db.Select<Cliente>(x => x.IdCliente == IdCliente).FirstOrDefault();
+            return _db.Select<Factura>(x => x.Codigo == Codigo).FirstOrDefault();
         }
 
-        public void InsertarCliente(Cliente cliente)
+        public void InsertarFactura(Factura factura)
         {
-            _db.Insert(cliente);
+            _db.Insert(factura);
         }
 
-        public void ActualizarCliente(Cliente clientes)
+        public void ActualizarFactura(Factura factura)
         {
-            _db.Update(clientes);
+            _db.Update(factura);
         }
 
-        public void EliminarCliente(int IdCliente)
+        public void EliminarFactura(int Codigo)
         {
-            _db.Delete<Cliente>(x => x.IdCliente == IdCliente);
+            _db.Delete<Factura>(x => x.Codigo == Codigo);
         }
     }
 }

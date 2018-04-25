@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MantenCliente.aspx.cs" Inherits="SUCA.UI.MantenCliente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MantenFactura.aspx.cs" Inherits="SUCA.UI.MantenFactura" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    
-    <h2>Mantenimiento de clientes</h2>
+     <h2>Mantenimiento de materia prima</h2>
     <div class="form-inline">
         <div class="alert alert-success" visible="false" id="mensaje" runat="server">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -12,36 +11,36 @@
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
             <strong id="textoMensajeError" runat="server"></strong>
         </div>
-        <asp:Label ID="lbCedula1" runat="server" Text="ID Cliente: "></asp:Label>
-        <asp:TextBox ID="txtCedula1" runat="server" CssClass="form-control"></asp:TextBox>
+        <asp:Label ID="lblCodigo1" runat="server" Text="ID Codigo: "></asp:Label>
+        <asp:TextBox ID="txtCodigo1" runat="server" CssClass="form-control" OnTextChanged="txtCodigo1_TextChanged"></asp:TextBox>
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-success" OnClick="btnBuscar_Click" />
     </div>
 
     <br />
 
     <div class="form-group" id="divMantenimiento" runat="server" visible="false">
-        <asp:Label ID="lbCedula" runat="server" Text="ID Cliente"></asp:Label>
-        <asp:TextBox ID="txtCedula" runat="server" CssClass="form-control"></asp:TextBox>
+
+        <asp:Label ID="lblCodigo"  foreColor="black" runat="server" Text="Codigo:"></asp:Label>
+        <asp:TextBox ID="txtCodigo" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />
-
-        <asp:Label ID="lbNombre" runat="server" Text="Nombre"></asp:Label>
+        <asp:Label ID="lblNombre"  foreColor="black" runat="server" Text="Nombre:"></asp:Label>
         <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />
 
-        <asp:Label ID="lbApellidos" runat="server" Text="Apellido"></asp:Label>
-        <asp:TextBox ID="txtApellidos" runat="server" CssClass="form-control"></asp:TextBox>
+        <asp:Label ID="lblTotal"  foreColor="black" runat="server" Text="Total:"></asp:Label>
+        <asp:TextBox ID="txtTotal" runat="server" CssClass="form-control"></asp:TextBox>
+
+        <br />
+        
+        <asp:Label ID="lblDescuento"  foreColor="black" runat="server" Text="Descuento:"></asp:Label>
+        <asp:TextBox ID="txtDescuento" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />
 
-        <asp:Label ID="lblDireccion" runat="server" Text="Direccion:"></asp:Label>
-        <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control"></asp:TextBox>
-
-        <br />
-
-        <asp:Label ID="lblTelefono" runat="server" Text="Telefono:"></asp:Label>
-        <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control"></asp:TextBox>
+         <asp:Label ID="lblComentarios"  foreColor="black" runat="server" Text="Comentarios:"></asp:Label>
+        <asp:TextBox ID="txtComentarios" runat="server" CssClass="form-control"></asp:TextBox>
 
         <br />
        

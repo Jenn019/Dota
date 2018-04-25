@@ -10,10 +10,9 @@ using SUCA.BLL.Metodos;
 
 namespace SUCA.UI
 {
-    public partial class MantenProveedor : System.Web.UI.Page
+    public partial class MantenFactura : System.Web.UI.Page
     {
-        IProveedor prove = new MProveedor();
-
+        IFactura mat = new MFactura();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,25 +23,22 @@ namespace SUCA.UI
 
             try
             {
-                Proveedor proveedor = new Proveedor
+                Factura factura = new Factura
                 {
-                    IdProveedor = Convert.ToInt32(txtEmpresa1.Text),
-                    Empresa = txtEmpresa.Text,
+                    IdFactura = Convert.ToInt32(txtCodigo1.Text),
+                    Codigo = Convert.ToInt32(txtCodigo.Text),
                     Nombre = txtNombre.Text,
-                    Apellido = txtApellidos.Text,
-
-                    Direccion = txtDireccion.Text,
-                    Telefono = Convert.ToInt32(txtTelefono.Text),
-
-
+                    Total = Convert.ToInt32(txtTotal.Text),
+                    Descuento = Convert.ToInt32(txtDescuento.Text),
+                    Comentarios = txtComentarios.Text,
                 };
-                IProveedor clien = new MProveedor();
-                clien.ActualizarProveedor(proveedor);
-                MostarMensaje("Proveedor Modificado");
+                IFactura mat = new MFactura();
+                mat.ActualizarFactura(factura);
+                MostarMensaje("Materia Modificada");
                 divMantenimiento.Visible = false;
-                txtEmpresa.Enabled = true;
-                txtEmpresa.Text = string.Empty;
-                txtEmpresa.Focus();
+                txtCodigo.Enabled = true;
+                txtCodigo.Text = string.Empty;
+                txtCodigo.Focus();
             }
             catch (Exception)
             {
@@ -53,43 +49,43 @@ namespace SUCA.UI
 
         protected void btnEliminarc_Click(object sender, EventArgs e)
         {
+
             try
             {
-                prove.EliminarProveedor(Convert.ToInt32(txtEmpresa1.Text));
-                MostarMensaje("Proveedor Eliminado");
+                mat.EliminarFactura(Convert.ToInt32(txtCodigo1.Text));
+                MostarMensaje("Factura Eliminada");
                 divMantenimiento.Visible = false;
-                txtEmpresa1.ReadOnly = false;
-                txtEmpresa1.Text = string.Empty;
-                txtEmpresa1.Focus();
-                txtEmpresa1.Enabled = true;
+                txtCodigo1.ReadOnly = false;
+                txtCodigo1.Text = string.Empty;
+                txtCodigo1.Focus();
+                txtCodigo1.Enabled = true;
             }
             catch (Exception)
             {
                 MostarMensajeError("Ocurrio un error");
             }
+
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
-                var proveedor = prove.BuscarProveedor(Convert.ToInt32(txtEmpresa1.Text));
-                if (proveedor != null)
+                var factura = mat.BuscarFactura(Convert.ToInt32(txtCodigo1.Text));
+                if (factura != null)
                 {
-                    txtEmpresa1.Text = proveedor.IdProveedor.ToString();
-                    txtEmpresa.Text = proveedor.Empresa;
-                    txtNombre.Text = proveedor.Nombre;
-                    txtApellidos.Text = proveedor.Apellido.ToString();
-                    txtDireccion.Text = proveedor.Direccion.ToString();
-                    txtTelefono.Text = proveedor.Telefono.ToString();
-
+                    txtCodigo.Text = factura.Codigo.ToString();
+                    txtNombre.Text = factura.Nombre;
+                    txtTotal.Text = factura.Total.ToString();
+                    txtDescuento.Text = factura.Descuento.ToString();
+                    txtComentarios.Text = factura.Comentarios.ToString();
                     divMantenimiento.Visible = true;
-                    txtEmpresa1.Enabled = false;
+                    txtCodigo1.Enabled = false;
 
                 }
                 else
                 {
-                    MostarMensajeError("El Proveedor no existe");
+                    MostarMensajeError("La materia no existe");
                 }
             }
             catch (Exception)
@@ -112,6 +108,11 @@ namespace SUCA.UI
             mensajeError.Visible = true;
             textoMensajeError.InnerHtml = texto;
             textoMensaje.InnerHtml = string.Empty;
+        }
+
+        protected void txtCodigo1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

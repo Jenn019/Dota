@@ -30,10 +30,10 @@ namespace SUCA.DAL.Metodos
             return _db.Select<Materia>();
         }
 
-        public Materia BuscarMateria(int Codigo)
+        public Materia BuscarMateria(int IdMateria)
         {
 
-            return _db.Select<Materia>(x => x.Codigo == Codigo).FirstOrDefault();
+            return _db.Select<Materia>(x => x.IdMateria == IdMateria).FirstOrDefault();
         }
 
         public void InsertarMateria(Materia materia)
@@ -46,9 +46,9 @@ namespace SUCA.DAL.Metodos
             _db.Update(materia);
         }
 
-        public void EliminarMateria(int Codigo)
+        public void EliminarMateria(int IdMateria)
         {
-            _db.Delete<Materia>(x => x.Codigo == Codigo);
+            _db.Delete<Materia>(x => x.IdMateria == IdMateria);
         }
     }
 }

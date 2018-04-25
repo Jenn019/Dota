@@ -25,6 +25,7 @@ namespace SUCA.UI
             {
                 Producto producto = new Producto
                 {
+                    IdProducto = Convert.ToInt32(txtCodigo1.Text),
                     Nombre = txtNombre.Text,
                     Codigo = Convert.ToInt32(txtCodigo.Text),
                     Proveedor = txtProveedor.Text,
@@ -72,7 +73,9 @@ namespace SUCA.UI
             {
                 var producto = prod.BuscarProducto(Convert.ToInt32(txtCodigo1.Text));
                 if (producto != null)
+
                 {
+                    txtCodigo1.Text = producto.IdProducto.ToString();
                     txtCodigo.Text = producto.Codigo.ToString();
                     txtNombre.Text = producto.Nombre;
                     txtProveedor.Text = producto.Proveedor;

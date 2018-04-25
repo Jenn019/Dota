@@ -26,6 +26,7 @@ namespace SUCA.UI
                 var materia = mat.BuscarMateria(Convert.ToInt32(txtCodigo1.Text));
                 if (materia != null)
                 {
+                    txtCodigo1.Text = materia.IdMateria.ToString();
                     txtCodigo.Text = materia.Codigo.ToString();
                     txtNombre.Text = materia.Nombre;
                     txtCosto.Text = materia.Costo.ToString();
@@ -52,6 +53,7 @@ namespace SUCA.UI
             {
                 Materia materia = new Materia
                 {
+                    IdMateria = Convert.ToInt32(txtCodigo1.Text),
                     Codigo = Convert.ToInt32(txtCodigo.Text),
                     Nombre = txtNombre.Text,
                     Cantidad = Convert.ToInt32(txtCantidad.Text),
